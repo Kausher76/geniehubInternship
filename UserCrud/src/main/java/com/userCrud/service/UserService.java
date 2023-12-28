@@ -9,7 +9,7 @@ import com.userCrud.dao.UserRepo;
 import com.userCrud.entities.User;
 
 @Service
-public class UserService {
+public class UserService implements UserServiceInterface {
 	
 	@Autowired
 	private UserRepo userRepo;
