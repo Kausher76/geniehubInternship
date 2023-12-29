@@ -1,4 +1,6 @@
-package com.userCrud.controller;
+package com.userCrud.controller.impl;
+
+
 
 import java.util.List;
 import java.util.Optional;
@@ -17,8 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.userCrud.DTO.Convertor;
 import com.userCrud.DTO.UserDTO;
+import com.userCrud.controller.UserControllerInterface;
 import com.userCrud.entities.User;
-import com.userCrud.service.UserService;
+import com.userCrud.service.impl.UserService;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -93,3 +96,4 @@ public class UserController implements UserControllerInterface {
         return new ResponseEntity<>(updatedUserDTO, HttpStatus.OK);
     }
 }
+

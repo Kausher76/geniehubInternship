@@ -1,4 +1,4 @@
-package com.userCrud.service;
+package com.userCrud.service.impl;
 
 import java.util.List;
 
@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.userCrud.dao.UserRepo;
 import com.userCrud.entities.User;
+import com.userCrud.service.UserServiceInterface;
 
 @Service
 public class UserService implements UserServiceInterface {
