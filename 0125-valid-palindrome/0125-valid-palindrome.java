@@ -5,13 +5,13 @@ class Solution {
         }
 
         s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
-        char[] charArray = s.toCharArray();
+        
 
         int low = 0;
-        int high = charArray.length - 1;
+        int high = s.length() - 1;
 
         while (low <= high) {
-            if (charArray[low] == charArray[high]) {
+            if (s.charAt(low) == s.charAt(high)) {
                 low++;
                 high--;
             } else {
